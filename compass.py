@@ -3,7 +3,8 @@ from PIL import Image
 import argparse
 import sys
 
-parser = argparse.ArgumentParser(description="Become a poly sci major with one CLI"parser.add_argument("-s", type = float, help = "scale at which icons should appear w.r.t. width", default = 0.1)
+parser = argparse.ArgumentParser(description="Become a poly sci major with one CLI")
+parser.add_argument("-s", type = float, help = "scale at which icons should appear w.r.t. width", default = 0.1)
 parser.add_argument("-b", type = str, help = "background image", default = "compass.png")
 args = parser.parse_args()
 image_scale = args.s
